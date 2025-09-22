@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Submisssion Result</title>
+  <link rel="stylesheet" href="../static/style.css">
+  <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/128/14649/14649052.png">
+</head>
+<body>
+  <header class="top-navbar">
+    <div class="nav-container">
+      <div class="logo">Device Registration</div>
+      <nav class="top-nav-links">
+        <a href="/">🎓 Student Dashboard</a>
+        <a href="/student_form">🧑‍🎓 Student Registration</a>
+        <!-- <a href="index.html">Student</a>
+        <a href="/page1">Admin</a> -->
+      </nav>
+    </div>
+  </header>
+
+  <!-- Optional background overlay if you want same as home -->
+  <div class="background-overlay"></div>
+
+  <main class="result-box">
+    <!-- Wrap everything in styled box -->
+    <form action="/" method="get">
+
+      <h2>{{ message }}</h2>
+      <p><strong>Roll Number:</strong> {{ rollno }}</p>
+      <p><strong>MAC Address:</strong> {{ mac }}</p>
+
+        <button type="submit">Back to Home</button>
+      </form>
+    </div>
+  </main>
+</body>
+</html>

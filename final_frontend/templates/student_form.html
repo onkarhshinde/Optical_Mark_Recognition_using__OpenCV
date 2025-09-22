@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Details Form</title>
+  <link rel="stylesheet" href="../static/style.css">
+  <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/128/14649/14649052.png">
+</head>
+<body class="dark">
+  <header class="top-navbar">
+    <div class="nav-container">
+      <div class="logo">Student Registration</div>
+      <nav class="top-nav-links">
+        <a href="/">🎓 Student Dashboard</a>
+        <a href="/form">📲 Device Registration </a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="background-overlay"></div>
+
+  <main class="main-content">
+    <h1>Student Details Form</h1>
+    <form method="POST" action="/student_submit">
+      <label for="rollno">Roll Number:</label>
+      <input type="text" name="rollno" id="rollno" required>
+
+      <label for="year">Year:</label>
+      <input type="text" name="year" id="year" required>
+
+      <label for="branch">Branch:</label>
+      <input type="text" name="branch" id="branch" required>
+
+      <label for="stream">Stream:</label>
+      <input type="text" name="stream" id="stream" required>
+
+      <label for="hostel">Hostel:</label>
+      <input type="text" name="hostel" id="hostel" required>
+
+      <label for="gender">Gender:</label>
+      <input type="text" name="gender" id="gender" required>
+
+      <input type="submit" value="Submit">
+    </form>
+  </main>
+</body>
+</html>

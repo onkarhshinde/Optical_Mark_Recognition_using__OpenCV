@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Registration Result</title>
+  <link rel="stylesheet" href="../static/style.css">
+  <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/128/14649/14649052.png">
+</head>
+<body>
+  <header class="top-navbar">
+    <div class="nav-container">
+      <div class="logo">Student Registration</div>
+      <nav class="top-nav-links">
+        <a href="/">🎓 Student Dashboard</a>
+        <a href="/form">📲 Device Registration </a>
+        <!-- <a href="/">Dashboard</a> -->
+      </nav>
+    </div>
+  </header>
+
+  <div class="background-overlay"></div>
+
+  <main class="result-box">
+    <form action="/" method="get">
+      <h2>{{ message }}</h2>
+      <p><strong>Roll Number:</strong> {{ rollno }}</p>
+      <p><strong>Year:</strong> {{ year }}</p>
+      <p><strong>Branch:</strong> {{ branch }}</p>
+      <p><strong>Stream:</strong> {{ stream }}</p>
+      <p><strong>Hostel:</strong> {{ hostel }}</p>
+      <p><strong>Gender:</strong> {{ gender }}</p>
+      <button type="submit">Back to Home</button>
+    </form>
+  </main>
+</body>
+</html>

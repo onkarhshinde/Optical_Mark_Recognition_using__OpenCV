@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Registration Website</title>
+  <link rel="stylesheet" href="../static/style.css">
+  <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/128/14649/14649052.png">
+</head>
+  <body class="dark">
+  <header class="top-navbar">
+    <div class="nav-container">
+      <div class="logo">Device Registration</div>
+      <nav class="top-nav-links">
+        <a href="/">🎓 Student Dashboard</a>
+        <a href="/student_form">🧑‍🎓 Student Registration</a>
+        <!-- <a href="/page1">Admin</a>  -->
+      </nav>
+    </div>
+  </header>
+
+  <!-- Background image wrapper -->
+  <div class="background-overlay"></div>
+
+  <main class="main-content">
+    <h1>Device Registration Form</h1>
+    <form method="POST" action="/submit">
+      <label for="rollno">Roll Number:</label>
+      <input type="text" name="rollno" id="rollno" required> 
+
+      <label for="mac">MAC Address:</label>
+      <input type="text" name="mac" id="mac" required>
+
+      <input type="submit" value="Submit">
+    </form>
+  </main>
+</body>
+</html>

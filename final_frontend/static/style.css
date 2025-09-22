@@ -1,0 +1,139 @@
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.result-box {
+  max-width: 500px;
+  margin: 180px auto;
+  padding: 20px;
+  position: relative;
+  z-index: 1;
+  background-color: #1e293b;
+  border-radius: 12px;
+  box-shadow: 0 0 14px rgba(6, 182, 212, 0.1);
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0b0f19;
+  color: #e2e8f0;
+  min-height: 100vh;
+  position: relative;
+}
+
+/* Background image for home page */
+.background-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://admissionxpert.in/wp-content/uploads/2024/04/IIT-Guwahati-QS-World-Ranking-2024-1024x576.jpg');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.08;
+  z-index: 0;
+}
+
+/* Top Navbar */
+.top-navbar {
+  background-color: 4491b4;
+  padding: 15px 30px;
+  box-shadow: 0 2px 6px rgba(79, 201, 223, 0.15);
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.top-nav-links a {
+  color: #e2e8f0;
+  text-decoration: none;
+  margin-left: 25px;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.top-nav-links a:hover {
+  color: #06b6d4;
+}
+
+/* Main Page Content */
+.main-content {
+  max-width: 35%;
+  margin: 80px auto;
+  padding: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Form and Result Boxes */
+form {
+  background-color: #1e293b;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(6, 182, 212, 0.1);
+}
+
+form label {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #f1f5f9;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  background-color: #334155;
+  color: #ffffff;
+  border: 1px solid #475569;
+  border-radius: 6px;
+}
+
+input[type="submit"],
+button {
+  margin-top: 25px;
+  padding: 10px 25px;
+  background-color: #06b6d4;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover,
+button:hover {
+  background-color: #0891b2;
+}
+
+/* Page Headings */
+h1, h2 {
+  color: #f1f5f9;
+  margin-bottom: 20px;
+}
+
+/* Result Page Specific Styling */
+p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
