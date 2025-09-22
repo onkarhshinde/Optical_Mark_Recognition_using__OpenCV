@@ -1,1 +1,0 @@
-# Optical_Mark_Recognition_using__OpenCV
